@@ -127,6 +127,18 @@ python scripts/render_annotation_preview.py <图片路径> <标注路径> <预�
 <ENV_PY> scripts/merge_scenes.py --inputs 幕1.mp4 幕2.mp4 幕3.mp4 --output final.mp4
 ```
 
+用 CIT Voice Studio 由文稿生成配音与 SRT（需先打开 CIT，API 位于 `127.0.0.1:8001`）：
+
+```bash
+python scripts/tts_cit.py 文稿.txt out/voice --voice "Hải Đăng"
+```
+
+导出 TikTok 竖版成片（1080x1920，合入配音、烧录字幕、开头钩子文字、AI 配音标注）：
+
+```bash
+python scripts/export_tiktok.py final.mp4 out/voice.wav out/voice.srt tiktok.mp4 --hook "Câu mở đầu\nxuống dòng"
+```
+
 ## 质量检查
 
 - 首帧是干净的暖米黄纸张底色，没有提前露出的线条

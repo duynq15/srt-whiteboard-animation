@@ -1,0 +1,107 @@
+{
+  "sceneId": "scene-01",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "storyBasis": "Trên núi khỉ, một chú khỉ nhỏ ngồi trên đỉnh hòn non bộ, tay cầm một quả chuối. Bất ngờ, một con khỉ lớn lao tới, giật phắt quả chuối. Lũ trẻ đứng xem sững sờ, rồi cùng vỗ tay cười ầm lên.",
+  "sceneDurationMs": 10900,
+  "elements": [
+    {
+      "id": "left",
+      "label": "左侧场景",
+      "sequence": 1,
+      "narrativeRole": "场景铺垫",
+      "subtitle": "Trên núi khỉ, một chú khỉ nhỏ ngồi trên đỉnh hòn non bộ, tay cầm một quả chuối.",
+      "type": "structure",
+      "region": {
+        "x": 20,
+        "y": 120,
+        "width": 540,
+        "height": 780
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 200,
+        "durationMs": 3500,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          290,
+          130
+        ],
+        "end": [
+          290,
+          890
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "center",
+      "label": "中间主体",
+      "sequence": 2,
+      "narrativeRole": "动作冲突",
+      "subtitle": "Bất ngờ, một con khỉ lớn lao tới, giật phắt quả chuối.",
+      "type": "character",
+      "region": {
+        "x": 560,
+        "y": 100,
+        "width": 560,
+        "height": 800
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 4480,
+        "durationMs": 2800,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          840,
+          110
+        ],
+        "end": [
+          840,
+          890
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "right",
+      "label": "右侧反应",
+      "sequence": 3,
+      "narrativeRole": "反应结果",
+      "subtitle": "Lũ trẻ đứng xem sững sờ, rồi cùng vỗ tay cười ầm lên.",
+      "type": "character",
+      "region": {
+        "x": 1120,
+        "y": 140,
+        "width": 532,
+        "height": 760
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 7960,
+        "durationMs": 2800,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1380,
+          150
+        ],
+        "end": [
+          1380,
+          880
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}
